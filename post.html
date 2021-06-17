@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>夜市美食</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="styles.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>  
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script>window.addEventListener('DOMContentLoaded', () => {
+    let scrollPos = 0;
+    const mainNav = document.getElementById('mainNav');
+    const headerHeight = mainNav.clientHeight;
+    window.addEventListener('scroll', function() {
+        const currentTop = document.body.getBoundingClientRect().top * -1;
+        if ( currentTop < scrollPos) {
+            // Scrolling Up
+            if (currentTop > 0 && mainNav.classList.contains('is-fixed')) {
+                mainNav.classList.add('is-visible');
+            } else {
+                console.log(123);
+                mainNav.classList.remove('is-visible', 'is-fixed');
+            }
+        } else {
+            // Scrolling Down
+            mainNav.classList.remove(['is-visible']);
+            if (currentTop > headerHeight && !mainNav.classList.contains('is-fixed')) {
+                mainNav.classList.add('is-fixed');
+            }
+        }
+        scrollPos = currentTop;
+    });
+})</script>
+	</head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">夜市美食</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">夜市美食精選</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">全台夜市通</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">台灣十大夜市</a></li>
+						<li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="tran.html">交通</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Page Header-->
+
+        <header class="masthead" style="background-image: url('4.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>夜市美食</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Post Content-->
+        <section id="title">
+              <div><h3>台灣小吃便宜又多樣化，為你介紹一些夜市，帶你一起逛遍台灣夜市~</h3></div>
+            </section>
+
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+            
+                    <!-- Post preview-->
+                    <div class="post-preview">
+                        <a href="#">
+                            <h2 class="post-title">全台夜市通</h2>
+                        </a>
+                    </div>
+                    <!-- Divider-->
+                    <hr class="my-4" />
+                    <!-- Post preview-->
+                    <div class="container">
+                        <div class="row">
+
+                        <div class="col-4">
+                          <button onclick="showDialog();" type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModalCenter">
+                            <div class="card" style="width: 18rem;">
+                              <img alt="士林夜市" src="4.jpg" />
+                                <div class="card-body">
+                                  <h3 class="grid_name">士林夜市</h3>
+                                </div>
+                            </div>
+						  </button>
+						  <!-- Modal -->
+                    <div class="modal fade show" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                       <div id="exampleModalCenter" class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">士林夜市</h5>
+                            <button onclick="closeDialog();" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                           <h5 class="modal-title" id="exampleModalCenterTitle"></h5>                                  
+                            <div class="modal-body">
+                              <p>士林夜市是臺北市範圍最大的夜市，也是國外觀光客造訪臺北必到的觀光夜市。可分為兩個主要範圍，一個是傳統陽明戲院周邊的街道，包括大南路慈諴宮一帶；另一邊則是基河路101號重新營運的士林市場。
+                                 來逛夜市的人大都以美食與購物為主，這裡有各式各樣新奇好玩的商品與美食，便宜又大碗，吸引大批的人潮。這樣特殊的夜市文化，是臺北夜生活不可缺少的一部份。最為著名的莫過於多樣的美食小吃</p>
+                              <p>夜市美食：老士林大餅包小餅、忠誠號蚵仔煎、鐘家原上海生煎包、藥膳排骨、南港老張碳烤胡椒餅、家鄉涼麵、士林炒羊肉、豪大大雞排、新竹家鄉碳烤香雞排</p>
+							</div>
+						   <h6 class="modal-title" id="exampleModalCenterTitle"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.4097640670802!2d121.52201371744384!3d25.0879869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aeb1c4fdaf05%3A0xe7c26dbe86e7f929!2z5aOr5p6X5aSc5biC!5e0!3m2!1szh-TW!2stw!4v1623859280795!5m2!1szh-TW!2stw" width="495" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></h6>
+                            <div onclick="closeDialog();" class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                            </div>
+                       </div>                   
+                     </div>
+                    </div>
+                        </div>
+
+                        <div class="col-4">
+                          <button onclick="showDialog();" type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModalCenter2">
+                            <div class="card" style="width: 18rem;">
+                              <img alt="饒河夜市" src="34.jpg" />
+                                <div class="card-body">
+                                  <h3 class="grid_name">饒河夜市</h3>
+                                </div>
+                            </div>
+						  </button>
+						  <!-- Modal -->
+                    <div class="modal fade show" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                       <div id="exampleModalCenter" class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">饒河夜市</h5>
+                            <button onclick="closeDialog();" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                           <h5 class="modal-title" id="exampleModalCenterTitle"></h5>                                  
+                            <div class="modal-body">
+                              <p>來到八德路4段與塔悠街交叉口，看到入口處金碧輝煌的牌樓，閃閃發亮的市集，在夜間特別顯眼，再看到象徵夜市吉祥物的貓頭鷹圖騰，就知道夜市已經近在眼前。
+                                 饒河街觀光夜市是臺北市最早的觀光夜市，規模並不大，攤位非常集中，只要是常來的熟客，很快就可以找到自己想吃的攤位，非常方便。饒河街觀光夜市有許多非吃不可的美食</p>
+                              <p>夜市美食：下港名彭臭豆腐、福州世祖胡椒餅、福島屋圓圓燒、陳董藥燉排骨、東發號蚵仔麵線</p>
+                            </div>
+						   <h6 class="modal-title" id="exampleModalCenterTitle"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.502300642238!2d121.57533671389845!3d25.05095894376783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ab9c0db4a583%3A0x3da21183815df6f6!2z6aWS5rKz6KGX6KeA5YWJ5aSc5biC!5e0!3m2!1szh-TW!2stw!4v1623859206190!5m2!1szh-TW!2stw" width="495" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></h6>
+                            <div onclick="closeDialog();" class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                            </div>
+                       </div>                   
+                     </div>
+                    </div>
+                        </div>
+
+                        <div class="col-4">
+                          <button onclick="showDialog();" type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModalCenter3">
+                            <div class="card" style="width: 18rem;">
+                              <img alt="寧夏夜市" src="35.jpg" />
+                                <div class="card-body">
+                                  <h3 class="grid_name">寧夏夜市</h3>
+                                </div>
+                            </div>
+						  </button>
+						  <!-- Modal -->
+                    <div class="modal fade show" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                       <div id="exampleModalCenter" class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">寧夏夜市</h5>
+                            <button onclick="closeDialog();" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                           <h5 class="modal-title" id="exampleModalCenterTitle"></h5>                                  
+                            <div class="modal-body">
+                              <p>位於台北市大同區圓環邊的寧夏夜市， 除了有讓人垂涎欲滴的小吃美食之外，夜市還夾帶著濃濃的人情味，許多在地故事、文化精神都在其中。寧夏夜市財務管理委由會計師事務所製作財務報表確保財務透明化，進而訂立工作規範與「攤商管理辦法」，與當地里長一起推動鄰里和諧，也結合大稻埕文化推動，當夜市與在地文化的情感緊密結合時，每個攤位的形象與口味，都成為好玩有趣的文化故事，不斷地被傳頌著。</p>
+                              <p>夜市美食：鴨頭正二代、詹記雞腳翅、劉芋仔蛋黃芋餅、賴記雞蛋蚵仔煎、環記麻油雞、林記燒麻糬、阿桐阿寶四神湯</p>
+							</div>
+						   <h6 class="modal-title" id="exampleModalCenterTitle"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.367219704948!2d121.51307961389851!3d25.055539843584043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a96b56cf45c5%3A0xa2e6923fa27a10b4!2z5a-n5aSP5aSc5biC!5e0!3m2!1szh-TW!2stw!4v1623859126750!5m2!1szh-TW!2stw" width="495" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></h6>
+                            <div onclick="closeDialog();" class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                            </div>
+                       </div>                   
+                     </div>
+                    </div>
+                        </div>
+
+                        <div class="col-4">
+                          <button onclick="showDialog();" type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModalCenter4">
+                            <div class="card" style="width: 18rem;">
+                              <img alt="樂華夜市" src="36.jpg" />
+                                <div class="card-body">
+                                  <h3 class="grid_name">樂華夜市</h3>
+                                </div>
+                            </div>
+						  </button>
+						  <!-- Modal -->
+                    <div class="modal fade show" id="exampleModalCenter4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                       <div id="exampleModalCenter" class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">樂華夜市</h5>
+                            <button onclick="closeDialog();" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                           <h5 class="modal-title" id="exampleModalCenterTitle"></h5>                                  
+                            <div class="modal-body">
+                              <p>樂華夜市位於台灣新北市永和區，是中永和地區的知名夜市。主要部分位於永平路，一個出口在為中山路口，另一個出口為永和路口。該地區白天僅有一個小型菜市場，每到黃昏則有許多攤販及人潮湧入，為永和的重要商圈。樂華夜市有許多台灣道地的小吃，像是炸魷魚、天婦羅、蚵仔煎、剉冰。這裡的小吃通常以現做的方式提供。此外，還有許多的服飾、小型的娛樂商店、錢櫃KTV、許多雜貨店、便利商店和連鎖店。但這裡十分擁擠，特別是星期五、六和星期日，幾乎所有的商店都營業到午夜。</p>
+                              <p>夜市美食：天使雞排、官記(純檸檬泰式涼拌木瓜)、肥豬的攤、阿國蝦仁羹、天下佈武-日月潭紅茶、燈籠加熱滷味</p>
+                            </div>
+						   <h6 class="modal-title" id="exampleModalCenterTitle"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.7555663993408!2d121.50953841389735!3d25.00842044547276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9c2e13fda0d%3A0x87312d53821d8c6f!2z5qiC6I-v5aSc5biC!5e0!3m2!1szh-TW!2stw!4v1623858678511!5m2!1szh-TW!2stw" width="495" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></h6>
+                            <div onclick="closeDialog();" class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                            </div>
+                       </div>                   
+                     </div>
+                    </div>
+                        </div>
+
+                        <div class="col-4">
+                          <button onclick="showDialog();" type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModalCenter5">
+                            <div class="card" style="width: 18rem;">
+                              <img alt="景美夜市" src="37.jpg" />
+                                <div class="card-body">
+                                  <h3 class="grid_name">景美夜市</h3>
+                                </div>
+                            </div>
+						  </button>
+						  <!-- Modal -->
+                    <div class="modal fade show" id="exampleModalCenter5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                       <div id="exampleModalCenter" class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">景美夜市</h5>
+                            <button onclick="closeDialog();" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                           <h5 class="modal-title" id="exampleModalCenterTitle"></h5>                                  
+                            <div class="modal-body">
+                              <p>多達數百家攤販的景美夜市，有30多年歷史，也是典型的傳統小吃，價格便宜。攤位全部集中在方形區域內。隨意走走逛逛，就是一個悠閒的夜晚。景美夜市的美食，多到數不清，好吃又大顆的景美上海生煎包、香酥夠味的阿郎鹽酥雞、芳香四溢的鄭家碳烤、冬令進補的當歸鴨和麻油雞，這麼多美味佳餚，一個胃真的不夠用。</p>
+                              <p>夜市美食：詹氏刈包、雙管四神湯&油飯、鵝媽媽鵝肉切仔麵、巷仔內米粉湯、鄭家炭烤、阿昌麵線、好吃鹽水雞、正傳統口味香豆花</p>
+							</div>
+						   <h6 class="modal-title" id="exampleModalCenterTitle"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.2793470723473!2d121.53954161389699!3d24.990622146185437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aa00da14e72d%3A0x4062be65e85a5289!2z5YyX5riv5aW95aW95ZCD77yI5pmv576O77yJ!5e0!3m2!1szh-TW!2stw!4v1623858577047!5m2!1szh-TW!2stw" width="495" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></h6>
+                            <div onclick="closeDialog();" class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                            </div>
+                       </div>                   
+                     </div>
+                    </div>
+                        </div>
+
+                        <div class="col-4">
+                          <button onclick="showDialog();" type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModalCenter6">
+                            <div class="card" style="width: 18rem;">
+                              <img alt="南機場夜市" src="38.jpg" />
+                                <div class="card-body">
+                                  <h3 class="grid_name">南機場夜市</h3>
+                                </div>
+                            </div>
+						  </button>
+						  <!-- Modal -->
+                    <div class="modal fade show" id="exampleModalCenter6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                       <div id="exampleModalCenter" class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">南機場夜市</h5>
+                            <button onclick="closeDialog();" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                           <h5 class="modal-title" id="exampleModalCenterTitle"></h5>                                  
+                            <div class="modal-body">
+                             <p>在台北松山機場未建好前,此處是飛機起降之地。 後來由於來往此地的人口眾多,各式小吃攤商聚集,漸漸發展成十分活絡的南機場夜市;也因為與松山機場的位置相對,為了方便區分，此地又稱為「台北南機場」,與台北其他觀光夜市不同,這邊比較不會看到連鎖的攤販,且多以小吃多,也沒有可以逛街買衣服玩遊戲的地方,其特色就是不論白天、下午、晚上皆有不同美食攤販入駐,價位以台北物價來說相對便宜。</p>
+                             <p>夜市美食：來來水餃、臭老闆清蒸臭豆腐、鐘家燒餅、阿男麻油雞、八棟圓仔湯</p>
+							</div>
+						   <h6 class="modal-title" id="exampleModalCenterTitle"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.1489734035636!2d121.50432506389788!3d25.029017944647613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9b1b0aaddbf%3A0x2da96f69cab8853d!2z5Y2X5qmf5aC05aSc5biC!5e0!3m2!1szh-TW!2stw!4v1623858503703!5m2!1szh-TW!2stw" width="495" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></h6>
+                            <div onclick="closeDialog();" class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                            </div>
+                       </div>                   
+                     </div>
+                    </div>
+                        </div>
+
+                        <div class="col-4">
+                          <button onclick="showDialog();" type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModalCenter7">
+                            <div class="card" style="width: 18rem;">
+                              <img alt="通化夜市" src="39.jpg" />
+                                <div class="card-body">
+                                  <h3 class="grid_name">通化夜市</h3>
+                                </div>
+                            </div>
+						  </button>
+						  <!-- Modal -->
+                    <div class="modal fade show" id="exampleModalCenter7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                       <div id="exampleModalCenter" class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">通化夜市</h5>
+                            <button onclick="closeDialog();" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                           <h5 class="modal-title" id="exampleModalCenterTitle"></h5>                                  
+                            <div class="modal-body">
+                              <p>通化夜市由通化街39巷及臨江街所形成的十字型觀光夜市。白天是菜市場，販賣著各式魚，肉，菜，聚集的每家婦女來此採購。一旦接近黃昏，兩旁的服飾店面，小吃攤販，也陸陸續續的開始營業，準備向人山人海的顧客接招。交通方便，接近世貿中心及台北101、信義商圈、信義威秀影城血拼完後，不妨到夜市體會當地人的人文風情。</p>
+                              <p>夜市美食：紅花麻辣鹽水雞、上海生煎包、梁記滷味、正好鮮肉小籠湯包、胡家米粉湯、義大利手工甜點提拉米蘇(不定時)、御品元傳統手工元宵、通化肉圓</p>
+							</div>
+						   <h6 class="modal-title" id="exampleModalCenterTitle"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.1158524514376!2d121.5520826138979!3d25.030142144602568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abcb3e5a8b07%3A0xba5d7dc78fba5d2e!2z5Y-w5YyX5biC6Ieo5rGf6KGX6KeA5YWJ5aSc5biC772c6YCa5YyW6KGX5aSc5biCIFRhaXdhbiBUYWlwZWkgTmlnaHQgTWFya2V0!5e0!3m2!1szh-TW!2stw!4v1623858308461!5m2!1szh-TW!2stw" width="495" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></h6>
+                            <div onclick="closeDialog();" class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                            </div>
+                       </div>                   
+                     </div>
+                    </div>
+                        </div>
+
+                        <div class="col-4">
+                          <button onclick="showDialog();" type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModalCenter8">
+                            <div class="card" style="width: 18rem;">
+                              <img alt="公館夜市" src="40.jpg" />
+                                <div class="card-body">
+                                  <h3 class="grid_name">公館夜市</h3>
+                                </div>
+                            </div>
+						  </button>
+						  <!-- Modal -->
+                    <div class="modal fade show" id="exampleModalCenter8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                       <div id="exampleModalCenter" class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">公館夜市</h5>
+                            <button onclick="closeDialog();" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                           <h5 class="modal-title" id="exampleModalCenterTitle"></h5>                                  
+                            <div class="modal-body">
+                              <p>公館商圈鄰近臺灣大學、臺灣科技大學、師範大學公館校區，提供市民及學生食衣住行育樂機能性完善的購物商圈，除了擁有符合外國遊客和交換生口味的各式異國料理餐廳，也有美食咖啡廳及著名的手搖飲料店；日常服飾及體育用品商家眾多，買衣買鞋都非常方便；同時公館商圈位於臺北市南區的重要交通樞紐地帶，大眾運輸發達又便利。</p>
+                              <p>夜市美食：鴉片粉圓、藍家割包、龍潭豆花、廖家食記宜蘭蔥餅、大學口湯圓(30年老店酒釀湯圓)、劉家水煎包等。</p>
+							</div>
+						   <h6 class="modal-title" id="exampleModalCenterTitle"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.6005250777553!2d121.53250701389749!3d25.01368654526188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ac1555555555%3A0xf07cd33759fa01c1!2z5Y-w5YyX5YWs6aSo5aSc5biC!5e0!3m2!1szh-TW!2stw!4v1623858272038!5m2!1szh-TW!2stw" width="495" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></h6>
+                            <div onclick="closeDialog();" class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                            </div>
+                       </div>                   
+                     </div>
+                    </div>
+                        </div>
+
+                        <div class="col-4">
+                          <button onclick="showDialog();" type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModalCenter9">
+                            <div class="card" style="width: 18rem;">
+                              <img alt="興南夜市" src="41.jpg" />
+                                <div class="card-body">
+                                  <h3 class="grid_name">興南夜市</h3>
+                                </div>
+                            </div>
+						  </button>
+						  <!-- Modal -->
+                    <div class="modal fade show" id="exampleModalCenter9" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                       <div id="exampleModalCenter" class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">興南夜市</h5>
+                            <button onclick="closeDialog();" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                           <h5 class="modal-title" id="exampleModalCenterTitle"></h5>                                  
+                            <div class="modal-body">
+                              <p>興南觀光夜市緊鄰捷運南勢角站，步行約3分鐘即可抵達，交通非常方便。夜市範圍以信義街、景興街410巷為主，攤商大多為小吃、服飾等生活雜貨零售，是一處以在地人需求為主的小型夜市。興南夜市的推薦美食包括台灣豆花、黃家大腸蚵仔麵線、招牌特製脆腸、唐老鴨滷味等都是人氣小吃。而距離捷運南勢角站約15分鐘腳程的華新街，大多數人又它為「緬甸街」，這裡匯集了包括緬甸、越南、雲南、印度等東南亞料理，各家餐廳的料理各具特色、美味又平價，是許多人到中和會走訪的美食街。</p>
+							  <p>夜市美食：台灣豆花、黃家大腸蚵仔麵線、通化街二十年招牌脆腸、唐老鴨滷味</p>
+                            </div>
+						   <h6 class="modal-title" id="exampleModalCenterTitle"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.2984249898695!2d121.50854191389692!3d24.989973646211322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34680273997671bd%3A0xdc9fa4291d650c85!2z6IiI5Y2X5aSc5biC!5e0!3m2!1szh-TW!2stw!4v1623858234630!5m2!1szh-TW!2stw" width="495" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></h6>
+                            <div onclick="closeDialog();" class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                            </div>
+                       </div>                   
+                     </div>
+                    </div>
+                        </div>
+
+                        <div class="col-4">
+                          <button onclick="showDialog();" type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModalCenter10">
+                            <div class="card" style="width: 18rem;">
+                              <img alt="湳雅夜市" src="42.jpg" />
+                                <div class="card-body">
+                                  <h3 class="grid_name">湳雅夜市</h3>
+                                </div>
+                            </div>
+						  </button>
+						  <!-- Modal -->
+                    <div class="modal fade show" id="exampleModalCenter10" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                       <div id="exampleModalCenter" class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">湳雅夜市</h5>
+                            <button onclick="closeDialog();" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                           <h5 class="modal-title" id="exampleModalCenterTitle"></h5>                                  
+                            <div class="modal-body">
+                              <p>湳雅夜市位於新北市板橋區湳雅東路與湳雅南路一段口，鄰近板橋後站，在湳雅夜市內擁有許多小吃、美食攤位，每個攤位排列整齊、規劃統一，只有少數的服飾店面和雜貨用品店佇立於此。</p>
+							  <p>夜市美食：板橋王家好吃麻油雞、板橋小籠包、蚵仔之家、好味道臭豆腐、許記藥燉排骨、正新營肉圓等、騎士現炸起士捲、好多味大腸包小腸</p>
+                            </div>
+						   <h6 class="modal-title" id="exampleModalCenterTitle"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.8446598984524!2d121.45346961389728!3d25.005393845593982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346802a900f6c139%3A0xee29369b7b7d0521!2z5p2_5qmL5rmz6ZuF5aSc5biC!5e0!3m2!1szh-TW!2stw!4v1623858189894!5m2!1szh-TW!2stw" width="495" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></h6>
+                            <div onclick="closeDialog();" class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                            </div>
+                       </div>                   
+                     </div>
+                    </div>
+                        </div>
+
+                        <div class="col-4">
+                          <button onclick="showDialog();" type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModalCenter11">
+                            <div class="card" style="width: 18rem;">
+                              <img alt="樹林花園夜市" src="43.jpg" />
+                                <div class="card-body">
+                                  <h3 class="grid_name">樹林花園夜市</h3>
+                                </div>
+                            </div>
+						  </button>
+						  <!-- Modal -->
+                    <div class="modal fade show" id="exampleModalCenter11" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                       <div id="exampleModalCenter" class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">樹林花園夜市</h5>
+                            <button onclick="closeDialog();" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                           <h5 class="modal-title" id="exampleModalCenterTitle"></h5>                                  
+                            <div class="modal-body">
+                              <p>樹林興仁花園夜市位佔地約15,000坪，同時附設1,000個汽機車停車位。有別於一般夜市的混合形式，規劃了遊客服務處、公共廁所，於各個路口轉角放置垃圾桶，大大降低亂丟垃圾的機率。攤商區中間的通道也相當寬敞，讓民眾可以輕鬆逛夜市。興仁花園夜市的排隊美食眾多，各式燒烤、甜點、飲料等應有盡有，歡樂王國更是許多大人小孩的玩樂天堂， 包括套圈圈、小火車、旋轉木馬、海盜船、動力彈跳等趣味活動，一起共度歡樂時光。</p>
+							  <p>夜市美食：芙琳卡、腸腸久久、九鼎花雕蝦、島瓜豆干、貝蛤蛤海鮮專賣店、二代起司章魚燒</p>
+                            </div>
+						   <h6 class="modal-title" id="exampleModalCenterTitle"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.910144515794!2d121.41323911389723!3d25.003169045683087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681d6eb0cd3bcd%3A0x46078e4abfb2896!2z5qi55p6XIOiIiOS7geiKseWckuWknOW4gg!5e0!3m2!1szh-TW!2stw!4v1623858153627!5m2!1szh-TW!2stw" width="495" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></h6>
+                            <div onclick="closeDialog();" class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                            </div>
+                       </div>                   
+                     </div>
+                    </div>
+                        </div>
+
+                        <div class="col-4">
+                          <button onclick="showDialog();" type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModalCenter12">
+                            <div class="card" style="width: 18rem;">
+                              <img alt="基隆廟口夜市" src="44.jpg" />
+                                <div class="card-body">
+                                  <h3 class="grid_name">基隆廟口夜市</h3>
+                                </div>
+                            </div>
+						  </button>
+						  <!-- Modal -->
+                    <div class="modal fade show" id="exampleModalCenter12" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                       <div id="exampleModalCenter" class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">基隆廟口夜市</h5>
+                            <button onclick="closeDialog();" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                           <h5 class="modal-title" id="exampleModalCenterTitle"></h5>                                  
+                            <div class="modal-body">
+                              <p>基隆廟口是全台最知名的夜市之一，位於基隆市仁愛區的小吃市集，以仁三路上的奠濟宮為中心聚集，因此被稱作廟口夜市。登記有60家廟口夜市美食。基隆廟口夜市營業時間很早，大概從中午12點就有店家開始營業，下午5點後營業的店家開始多了起來，一路營業到晚上12點</p>
+							  <p>夜市美食：阿華炒麵、鼎邊銼、天婦羅、碳烤三明治、螃蟹羹、咖哩炒麵</p>
+                            </div>
+						   <h6 class="modal-title" id="exampleModalCenterTitle"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.2200968056204!2d121.74144981390037!3d25.128248740663185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x345d4e3e159d9663%3A0x1d84dd13f992491e!2z5Z-66ZqG5buf5Y-j5aSc5biC!5e0!3m2!1szh-TW!2stw!4v1623858115067!5m2!1szh-TW!2stw" width="495" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></h6>
+                            <div onclick="closeDialog();" class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                            </div>
+                       </div>                   
+                     </div>
+                    </div>
+                        </div>
+
+                        <div class="col-4">
+                          <button onclick="showDialog();" type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModalCenter13">
+                            <div class="card" style="width: 18rem;">
+                              <img alt="中原夜市" src="45.jpg" />
+                                <div class="card-body">
+                                  <h3 class="grid_name">中原夜市</h3>
+                                </div>
+                            </div>
+						  </button>
+						  <!-- Modal -->
+                    <div class="modal fade show" id="exampleModalCenter13" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                       <div id="exampleModalCenter" class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">中原夜市</h5>
+                            <button onclick="closeDialog();" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                           <h5 class="modal-title" id="exampleModalCenterTitle"></h5>                                  
+                            <div class="modal-body">
+                              <p>關於中原夜市. 位於桃園中壢區的中原夜市，顧名思義是因鄰近中原大學而得名。. 大專院校周邊為迎合學生族群的生活所需，經常成為熱絡的商圈與夜市，若以成熟度與知名度而言，中原夜市可說是桃園地區的代表夜市。. 中原夜市以中原大學為中心，範圍遍及環中東路、中山東路與新中北路三條幹道所圍起的區域，種類不僅限於各類小吃，亦有流行服飾、生活雜貨等商店，也使得學生們相當仰賴中原夜市的便利與美食。.</p>
+							  <p>夜市美食：御冠園鮮肉湯包、長髮叔叔蔥油餅、皇后先生手搖杯飲料、中原第一家麻辣豆腐、包好甲蔥燒包、鳥蛋達人、蔬菜蛋餅、開運屋地瓜球</p>
+                            </div>
+						   <h6 class="modal-title" id="exampleModalCenterTitle"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.308145351095!2d121.23850711389609!3d24.955628547585025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34682215704ecc33%3A0x2adee07c063e88d1!2z5Lit5Y6f5aSc5biC!5e0!3m2!1szh-TW!2stw!4v1623858036002!5m2!1szh-TW!2stw" width="495" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></h6>
+                            <div onclick="closeDialog();" class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                            </div>
+                       </div>                   
+                     </div>
+                    </div>
+                        </div>
+
+                        <div class="col-4">
+                          <button onclick="showDialog();" type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModalCenter14">
+                            <div class="card" style="width: 18rem;">
+                              <img alt="中壢夜市" src="46.jpg" />
+                                <div class="card-body">
+                                  <h3 class="grid_name">中壢夜市</h3>
+                                </div>
+                            </div>
+						  </button>
+						  <!-- Modal -->
+                    <div class="modal fade show" id="exampleModalCenter14" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                       <div id="exampleModalCenter" class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">中壢夜市</h5>
+                            <button onclick="closeDialog();" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                           <h5 class="modal-title" id="exampleModalCenterTitle"></h5>                                  
+                            <div class="modal-body">
+                              <p>中壢觀光夜市，集中各種攤販在新明路與中央西路路段之間，不僅交通方便，整個夜市也有很好的交通規畫，除了可以吃喝玩樂以外，也有設置服飾區塊，值得大家一逛再逛。</p>
+							  <p>夜市美食：簡師傅麻辣臭豆腐、溫記手工豆花、日春木瓜牛奶、瑞記排骨酥、好鮮屋米粉湯、阿華生鮮碳烤、波蘭傳統手工蛋糕、二師傅麻油雞</p>
+                            </div>
+						   <h6 class="modal-title" id="exampleModalCenterTitle"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.179813291738!2d121.2129740138962!3d24.959996147410457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346823ca9d4a544d%3A0x1e830a7bff936fdd!2z5Lit5aOi6KeA5YWJ5aSc5biC!5e0!3m2!1szh-TW!2stw!4v1623857994646!5m2!1szh-TW!2stw" width="495" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></h6>
+                            <div onclick="closeDialog();" class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                            </div>
+                       </div>                   
+                     </div>
+                    </div>
+                        </div>
+
+                        <div class="col-4">
+                          <button onclick="showDialog();" type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModalCenter15">
+                            <div class="card" style="width: 18rem;">
+                              <img alt="新竹都城隍廟" src="47.jpg" />
+                                <div class="card-body">
+                                  <h3 class="grid_name">新竹都城隍廟</h3>
+                                </div>
+                            </div>
+						  </button>
+						  <!-- Modal -->
+                    <div class="modal fade show" id="exampleModalCenter15" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                       <div id="exampleModalCenter" class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">新竹都城隍廟</h5>
+                            <button onclick="closeDialog();" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                           <h5 class="modal-title" id="exampleModalCenterTitle"></h5>                                  
+                            <div class="modal-body">
+                              <p>新竹城隍廟夜市，可是許多新竹人，甚至是外縣市的遊客都喜歡來吃美食的地方。新竹城隍廟美食區2020年整修後，環境也變得更美更好逛了。不得不說新竹城隍廟美食相當多，像是廟口鴨香飯、周家燒麻糬、郭家潤餅、柳家肉燥飯等，都是食尚玩家推薦新竹城隍廟必吃美食。另外像是新復珍竹塹餅、淵明餅舖水蒸蛋糕、西大發包子等都是新竹城隍廟知名的伴手禮。</p>
+							  <p>夜市美食：柳家肉燥飯專賣店、廟口李家鴨香飯、林家肉圓、北門炸粿、郭家潤餅、原夜市魷魚羹</p>
+                            </div>
+						   <h6 class="modal-title" id="exampleModalCenterTitle"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.7393616928603!2d120.96327131389232!3d24.804376853614198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346835c010543a25%3A0xc06a66d03f2eecd!2z5paw56u55biC5Z-O6ZqN5buf5aSc5biC!5e0!3m2!1szh-TW!2stw!4v1623857949366!5m2!1szh-TW!2stw" width="495" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></h6>
+                            <div onclick="closeDialog();" class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                            </div>
+                       </div>                   
+                     </div>
+                    </div>
+                        </div>
+                          
+                        <div class="col-4">
+                          <button onclick="showDialog();" type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModalCenter16">
+                            <div class="card" style="width: 18rem;">
+                              <img alt="逢甲夜市" src="48.jpg" />
+                                <div class="card-body">
+                                  <h3 class="grid_name">逢甲夜市</h3>
+                                </div>
+                            </div>
+						  </button>
+						  <!-- Modal -->
+                    <div class="modal fade show" id="exampleModalCenter16" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                       <div id="exampleModalCenter" class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">逢甲夜市</h5>
+                            <button onclick="closeDialog();" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                           <h5 class="modal-title" id="exampleModalCenterTitle"></h5>                                  
+                            <div class="modal-body">
+                              <p>逢甲夜市位於台中市西屯區以文華路、福星路、逢甲路為主，是全台灣最大且著名的觀光夜市，逢甲夜市的消費以『俗擱大碗』為最吸引各路愛好夜市的民眾，若遇假日其人潮更是讓逢甲夜市主幹道塞得水泄不通；逢甲夜市以新奇又有趣的小吃聞名，成為創新小吃的原始地，例如逢甲四合一、蜂蜜檸檬蘆薈、可麗餅、胡椒餅等等，都是由此逢甲夜市發源再外傳到各地的哦。</p>
+							  <p>夜市美食：逢甲黃金烏賊、大勝炒麵麵包、神仙草(柴燒嫩仙草專賣店)、黃金右腿、大甲芋頭城</p>
+                            </div>
+						   <h6 class="modal-title" id="exampleModalCenterTitle"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7279.610891274122!2d120.6418905706196!3d24.178555025184433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3469162259b6852b%3A0xf1a08e8dacfe639!2z6YCi55Sy5aSc5biC!5e0!3m2!1szh-TW!2stw!4v1623857860824!5m2!1szh-TW!2stw" width="495" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></h6>
+                            <div onclick="closeDialog();" class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                            </div>
+                       </div>                   
+                     </div>
+                    </div>
+                        </div>
+
+                        <div class="col-4">
+                          <button onclick="showDialog();" type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModalCenter17">
+                            <div class="card" style="width: 18rem;">
+                              <img alt="一中街夜市" src="49.jpg" />
+                                <div class="card-body">
+                                  <h3 class="grid_name">一中街夜市</h3>
+                                </div>
+                            </div>
+						  </button>
+						  <!-- Modal -->
+                    <div class="modal fade show" id="exampleModalCenter17" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                       <div id="exampleModalCenter" class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">一中街夜市</h5>
+                            <button onclick="closeDialog();" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                           <h5 class="modal-title" id="exampleModalCenterTitle"></h5>                                  
+                            <div class="modal-body">
+                              <p>台中一中街商圈為台中市最大型的學生商圈。白天為一般商店，到了傍晚，就成為熱鬧的夜市聚集區。這裡客層除了觀光客，以當地的年輕學子為多，因此商品也充滿年輕氣息。每天都人潮洶湧的一中街商圈，充滿琳瑯滿目各式美食。一中街商圈物美價廉，規模也不斷擴張，台中旅遊千萬別錯過！</p>
+							  <p>夜市美食：雞排、滷味、燒烤、大腸包小腸、東山鴨頭、麻辣豆腐、章魚丸、多多茶坊、一中巨無霸雞排、一中豐仁冰、王印製麵、21臭豆腐</p>
+                            </div>
+						   <h6 class="modal-title" id="exampleModalCenterTitle"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.6434771366025!2d120.68281651387643!3d24.149155679345352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d68e69dfb63%3A0x913519f67c42519a!2z5LiA5Lit5ZWG5ZyI!5e0!3m2!1szh-TW!2stw!4v1623857580431!5m2!1szh-TW!2stw" width="495" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></h6>
+                            <div onclick="closeDialog();" class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                            </div>
+                       </div>                   
+                     </div>
+                    </div>
+                        </div>
+
+                        <div class="col-4">
+                          <button onclick="showDialog();" type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModalCenter18">
+                            <div class="card" style="width: 18rem;">
+                              <img alt="武聖夜市" src="50.jpg" />
+                                <div class="card-body">
+                                  <h3 class="grid_name">武聖夜市</h3>
+                                </div>
+                            </div>
+						  </button>
+						  <!-- Modal -->
+                    <div class="modal fade show" id="exampleModalCenter18" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                       <div id="exampleModalCenter" class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">武聖夜市</h5>
+                            <button onclick="closeDialog();" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                           <h5 class="modal-title" id="exampleModalCenterTitle"></h5>                                  
+                            <div class="modal-body">
+                              <p>武聖夜市是許多台南人的共同回憶，除了夜市的可口美食琳琅滿目外，武聖夜市還有打彈珠、丟水球、射飛鏢、套圈套等大大小小傳統夜市遊戲，讓許多學生都愛來此地逛街，順便撿便宜，假日不妨帶著同學、家人一起來逛逛街聯絡感情。</p>
+							  <p>夜市美食：可莉屋可麗餅、大腸香腸、麻糬叔叔、黃家涼麵、韓國烤肉、老牌雞蛋糕、伊豆讚壽司、大府城沙茶魷魚焿、雞同鴨講煙燻魯味</p>
+                            </div>
+						   <h6 class="modal-title" id="exampleModalCenterTitle"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.5530337426794!2d120.18832111744389!3d23.003458000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e76427e24d273%3A0xc9d5491f9112950f!2z5Y-w5Y2X5q2m6IGW5aSc5biC!5e0!3m2!1szh-TW!2stw!4v1623857525457!5m2!1szh-TW!2stw" width="495" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></h6>
+                            <div onclick="closeDialog();" class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                            </div>
+                       </div>                   
+                     </div>
+                    </div>
+                        </div>
+
+                        <div class="col-4">
+                          <button onclick="showDialog();" type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModalCenter19">
+                            <div class="card" style="width: 18rem;">
+                              <img alt="瑞豐夜市" src="51.jpg" />
+                                <div class="card-body">
+                                  <h3 class="grid_name">瑞豐夜市</h3>
+                                </div>
+                            </div>
+						  </button>
+						  <!-- Modal -->
+                    <div class="modal fade show" id="exampleModalCenter19" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                       <div id="exampleModalCenter" class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">瑞豐夜市</h5>
+                            <button onclick="closeDialog();" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                           <h5 class="modal-title" id="exampleModalCenterTitle"></h5>                                  
+                            <div class="modal-body">
+                              <p>瑞豐夜市有許多的小吃，甚至還有許多店家是20年的歷史，各家各有其獨家的特色及口味，例如萬國鐵板麵、蒙古烤肉、沙嗲烤肉、上海香酥雞、古早味青草茶、日式麻辣黃金魚蛋、烤鴨夾餅號懶人蝦、麵線羹、傳統杏仁茶與粉圓、有特殊香味肉燥的狀元糕、真材實料的木瓜牛奶等等令人垂涎欲滴的美味小吃，而且都是饕客來此必定光顧的美味。</p>
+                              <p>夜市美食：沖繩酥炸大魷魚、韓式煎餅、岩武將日式岩燒、店小二特濃鮮紅茶</p>
+							</div>
+						   <h6 class="modal-title" id="exampleModalCenterTitle"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6191.873819704764!2d120.29301107191323!3d22.664588310309675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e05073fa25d1b%3A0x7f91ef4978c0f3f2!2z55Ge6LGQ5aSc5biC!5e0!3m2!1szh-TW!2stw!4v1623857475764!5m2!1szh-TW!2stw" width="495" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></h6>
+                            <div onclick="closeDialog();" class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                            </div>
+                       </div>                   
+                     </div>
+                    </div>
+                        </div>
+
+                        <div class="col-4">
+                          <button onclick="showDialog();" type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModalCenter20">
+                            <div class="card" style="width: 18rem;">
+                              <img alt="六合夜市" src="52.jpg" />
+                                <div class="card-body">
+                                  <h3 class="grid_name">六合夜市</h3>
+                                </div>
+                            </div>
+						  </button>
+						  <!-- Modal -->
+                    <div class="modal fade show" id="exampleModalCenter20" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                       <div id="exampleModalCenter" class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">六合夜市</h5>
+                            <button onclick="closeDialog();" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                           <h5 class="modal-title" id="exampleModalCenterTitle"></h5>                                  
+                            <div class="modal-body">
+                              <p>六合夜市；六合夜市全長380公尺共設有170個攤位，大多以小吃、娛樂遊戲為主。此外不論是山產、特產、冷飲、冰品及海產店等也是應有盡有，種類很多，其中鹽蒸蝦、筒仔米糕、臭豆腐、烏魚腱、海鮮粥、過魚湯、土魠魚羹等等算是高雄市的招牌特色，可千萬不要錯過；此外六合夜市裡還有許多擁有異國風味的攤位，像是土耳其人賣的土耳其冰淇淋、墨西哥人賣著墨西哥脆餅，還有日本人、印尼人也來此地擺攤賣飾品等等都十分特別喔！</p>
+                              <p>夜市美食：木瓜牛奶、老牌花生粽燒肉粽、莊家六合夜市海產粥、鄭老牌木瓜牛奶、東山鴨頭、烤肉之家、布袋名產蚵仔包</p>
+							</div>
+						   <h6 class="modal-title" id="exampleModalCenterTitle"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.579958133296!2d120.29704741384121!3d22.632155486488095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e048bc0d739c7%3A0xd3e6e842bfa0ecfd!2z5YWt5ZCI5aSc5biCL-WFreWQiOingOWFieWknOW4gg!5e0!3m2!1szh-TW!2stw!4v1623857389752!5m2!1szh-TW!2stw" width="495" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></h6>
+                            <div onclick="closeDialog();" class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                            </div>
+                       </div>                   
+                     </div>
+                    </div>
+                        </div>
+
+                        <div class="col-4">
+                          <button onclick="showDialog();" type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModalCenter21">
+                            <div class="card" style="width: 18rem;">
+                              <img alt="墾丁大街夜市" src="54.jpg" />
+                                <div class="card-body">
+                                  <h3 class="grid_name">墾丁大街夜市</h3>
+                                </div>
+                            </div>
+						  </button>
+						  <!-- Modal -->
+                    <div class="modal fade show" id="exampleModalCenter21" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                       <div id="exampleModalCenter" class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">墾丁大街夜市</h5>
+                            <button onclick="closeDialog();" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                           <h5 class="modal-title" id="exampleModalCenterTitle"></h5>                                  
+                            <div class="modal-body">
+                              <p>墾丁除了白砂灣之外，是墾丁大街也是著名的觀光景點之一，南台灣的終年好天氣與美麗沙灘而成為觀光客的度假勝地。</p>
+                              <p>墾丁大街上的商店包羅萬象，包括販賣各式海洋風味的紀念品店、夜市小吃攤、海產店等，其中餐廳種類尤其豐富，包括歐式、義式、泰式、韓式、甚至印式料理等，吸引許多觀光客到此填飽肚子，而其他例如刺青店、彩繪紋身攤位等等也是此地的特色商店。墾丁是所有喜愛海邊的朋友心中的天堂，如果忘了裝備，都可以在這裡採買齊全，因此可說是來到墾丁旅遊絕對不能錯過的地方。</p>
+                            </div>
+						   <h6 class="modal-title" id="exampleModalCenterTitle"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3700.708018001144!2d120.79422521382605!3d21.945773561218534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3471b13b187227f3%3A0x3019daff73e05a5a!2z5aK-5LiB5aSn6KGX5aSc5biC!5e0!3m2!1szh-TW!2stw!4v1623857280573!5m2!1szh-TW!2stw" width="495" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></h6>
+                            <div onclick="closeDialog();" class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                            </div>
+                       </div>                   
+                     </div>
+                    </div>
+                        </div>
+
+                        <div class="col-4">
+                          <button onclick="showDialog();" type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModalCenter22">
+                            <div class="card" style="width: 18rem;">
+                              <img alt="羅東夜市" src="54.jpg" />
+                                <div class="card-body">
+                                  <h3 class="grid_name">羅東夜市</h3>
+                                </div>
+                            </div>
+						  </button>
+						  <!-- Modal -->
+                    <div class="modal fade show" id="exampleModalCenter22" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                       <div id="exampleModalCenter" class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">羅東夜市</h5>
+                            <button onclick="closeDialog();" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                           <h5 class="modal-title" id="exampleModalCenterTitle"></h5>                                  
+                            <div class="modal-body">
+                              <p>羅東夜市位於宜蘭縣羅東鎮，範圍擴及民生路、民權路、公園路、興東路，是在地人於羅東市區逛街玩樂的好去處周圍商店林立，羅東夜市愈夜愈美麗，最富盛名的小吃街，幾乎全部集中在羅東公園四周，俗稱公園小吃，呈現H型分佈，果然是在地人宵夜的不二選擇。</p>
+                              <p>夜市美食：小春糕渣卜肉、赤炸風雲(雞排)、阿灶伯當歸羊肉、隆新一串心、王老吉滷味、魏姐包心粉圓、張秀雄的鹹米苔目、豆腐捲、米粉羹</p>
+							</div>
+						   <h6 class="modal-title" id="exampleModalCenterTitle"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3625.44196578784!2d121.76603141388924!3d24.677329358652738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3467e67df5c00daf%3A0x29dd12648cd9af6b!2z576F5p2x5aSc5biC!5e0!3m2!1szh-TW!2stw!4v1623857099510!5m2!1szh-TW!2stw" width="495" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></h6>
+                            <div onclick="closeDialog();" class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                            </div>
+                       </div>                   
+                     </div>
+                    </div>
+                        </div>
+
+                        <div class="col-4">
+                          <button onclick="showDialog();" type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModalCenter23">
+                            <div class="card" style="width: 18rem;">
+                              <img alt="東大門夜市" src="55.jpg" />
+                                <div class="card-body">
+                                  <h3 class="grid_name">東大門夜市</h3>
+                                </div>
+                            </div>
+						  </button>
+						  <!-- Modal -->
+                    <div class="modal fade show" id="exampleModalCenter23" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                       <div id="exampleModalCenter" class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">東大門夜市</h5>
+                            <button onclick="closeDialog();" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                           <h5 class="modal-title" id="exampleModalCenterTitle"></h5>                                  
+                            <div class="modal-body">
+                              <p>花蓮東大門國際觀光夜市，簡稱東大門夜市，以原有南濱夜市、福町夜市、自強夜市、彩虹夜市遷移整併而來，是台灣花蓮縣花蓮市重慶路及中山路口的一個夜市，橫跨花蓮市第二聯合里的民主里、民族里及民治里，位於舊有的台鐵花蓮車站及花蓮機務段處，架構可細分成福町夜市、自強夜市、原住民一條街及大陸各省一條街四大區域，占地約9公頃。</p>
+							  <p>夜市美食：福宜蘭香炸螃蟹、臭薯條、炙燒火焰骰子牛、妙不可言果汁店、第一家烤肉</p>
+                            </div>
+						   <h6 class="modal-title" id="exampleModalCenterTitle"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3645.6540336267767!2d121.60911126387217!3d23.972671086168152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34689fe9f14e0c29%3A0xbe7996e0680a20e5!2z5p2x5aSn6ZaA5aSc5biC!5e0!3m2!1szh-TW!2stw!4v1623856205007!5m2!1szh-TW!2stw" width="495" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></h6>
+                            <div onclick="closeDialog();" class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                            </div>
+                       </div>                   
+                     </div>
+                    </div>
+                        </div>
+
+                        <div class="col-4">
+                          <button onclick="showDialog();" type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModalCenter24">
+                            <div class="card" style="width: 18rem;">
+                              <img alt="台東夜市" src="56.jpg" />
+                                <div class="card-body">
+                                  <h3 class="grid_name">台東夜市</h3>
+                                </div>
+                            </div>
+						  </button>
+						  <!-- Modal -->
+                    <div class="modal fade show" id="exampleModalCenter24" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                       <div id="exampleModalCenter" class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">台東夜市</h5>
+                            <button onclick="closeDialog();" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                           <h5 class="modal-title" id="exampleModalCenterTitle"></h5>                                  
+                            <div class="modal-body">
+                              <p>位於台東市正氣路上的台東觀光夜市，晚上嘴饞無處去，就來台東觀光夜市找美食，享受南台灣的熱情吧！這裡美食豐富多樣、便宜又大碗，攤位總是有大批排隊人潮，也是網友經常推薦的必吃美食。其他像是彈珠台、兒童射擊遊戲等遊戲攤位也不缺席，讓大人小孩都能在台東夜市裡玩得開心、吃得過癮！</p>
+                              <p>夜市美食：寶桑湯圓、津芳冰城、烤肉刈包、章魚哥大丸子、正氣豆花、七里香水煎包</p>
+							</div>
+							<h6 class="modal-title" id="exampleModalCenterTitle"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7358.635396367509!2d121.14509850401014!3d22.75358821843815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe358b7c9a046d5ed!2z5Y-w5p2x6KeA5YWJ5aSc5biCIC0g5pyJR0_mspkt5Yaw5rKZLem7keezluePjeePoOmuruWltu-8iOWknOW4guW6l--8iQ!5e0!3m2!1szh-TW!2stw!4v1623856035478!5m2!1szh-TW!2stw" width="495" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></h6>
+                            <div onclick="closeDialog();" class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                            </div>
+                       </div>                   
+                     </div>
+                    </div>
+                        </div> 
+						
+                    </div> 
+					
+					 <span style="font-size: 20px; color: white;">1</span>
+                          <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="contact.html">十大夜市 →</a></div>
+					
+               <hr class="my-4" />
+        </div>
+    </body>
+</html>

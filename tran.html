@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>夜市美食</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="styles.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>  
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script>window.addEventListener('DOMContentLoaded', () => {
+    let scrollPos = 0;
+    const mainNav = document.getElementById('mainNav');
+    const headerHeight = mainNav.clientHeight;
+    window.addEventListener('scroll', function() {
+        const currentTop = document.body.getBoundingClientRect().top * -1;
+        if ( currentTop < scrollPos) {
+            // Scrolling Up
+            if (currentTop > 0 && mainNav.classList.contains('is-fixed')) {
+                mainNav.classList.add('is-visible');
+            } else {
+                console.log(123);
+                mainNav.classList.remove('is-visible', 'is-fixed');
+            }
+        } else {
+            // Scrolling Down
+            mainNav.classList.remove(['is-visible']);
+            if (currentTop > headerHeight && !mainNav.classList.contains('is-fixed')) {
+                mainNav.classList.add('is-fixed');
+            }
+        }
+        scrollPos = currentTop;
+    });
+})</script>
+	</head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">夜市美食</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">夜市美食精選</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">全台夜市通</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">台灣十大夜市</a></li>
+						<li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="tran.html">交通</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Page Header-->
+
+        <header class="masthead" style="background-image: url('4.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>夜市美食</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+            <section id="title">
+              <div><h3>台灣夜市的交通便利，為你整理出十大夜市的交通資訊~~</h3></div>
+            </section>
+			
+		<section id="QAfirst">
+	  <div class="accordion" id="accordionExample">
+	  
+        <div class="card" style="text-align:center;">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+               逢甲夜市交通資訊
+              </button>
+            </h2>
+         </div>
+      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body bodybg" style="text-align:left;">
+          <h3>大眾運輸</h3>
+		  <h4>1.高鐵：搭高鐵至烏日站下，再轉搭其他大眾運輸工具(台灣高鐵網站http://www.thsrc.com.tw/)</h4>
+          <h4>2.火車：先前往台中火車站或朝馬轉乘站再轉車至逢甲</h4>
+          <h4>3.客運：(1)由朝馬出發：高潛力公車統聯客運79線</h4>
+          (2)由台中車站出發：高潛力公車台中客運33線
+          <h4>(3)路上隨意搭：統聯79、81線、台中客運33、35、135線及仁友客運;22、25、37、45、125線、全航5線皆可抵達</h4>
+		  <h3>自行開車</h3>
+		  <h4>1.國道1號，台中交流道下，往台中市，行台中港路，河南路左轉，福星路右轉即抵</h4>
+		  <h4>2.國道1號，大雅交流道下，往台中市，行中清路，文心路右轉，河南路右轉，福星路右轉即抵</h4>
+		  <h4>3.國道3號，快官交流道下，台74(中彰快速道路)，往台中市，行台中港路，河南路左轉，福星路右轉即抵</h4>
+        </div>
+     </div>
+        </div>
+		
+    <div class="card" style="text-align:center;">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+               士林夜市交通資訊
+              </button>
+            </h2>
+         </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div class="card-body bodybg" style="text-align:left;">
+          <h3>大眾運輸</h3>
+		  <h4>搭高鐵或台鐵至台北站下-轉搭台北捷運至劍潭站下<h4>
+		  <h3>自行開車</h3>
+		  <h4>國道1號-台北交流道下-重慶北路四段-百齡橋-承德路四段-承德路四段292巷-大南路-基河路</h4>
+		  <h3>公車路線</h3>
+		  <h4>搭203、216、218、250、266、277、280、290、304副、308、310、606、616、618、或搭102、103、105在『海洋生活館』站下</h4>
+        </div>
+     </div>
+        </div>
+  
+   <div class="card" style="text-align:center;">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+               饒河夜市交通資訊
+              </button>
+            </h2>
+         </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+        <div class="card-body bodybg" style="text-align:left;">
+          <h3>火車</h3>
+		  <h4>可搭火車至松山車站，由後火車站下車，可抵達<h4>
+		  <h3>公車</h3>
+		  <h4>28、53、63、203、204、205、256、276、306、306區、311、518、527、531、605、605副、605新台、622、629直、668、675、678、711、棕1、藍7至饒河街觀光夜市站下車；內科通勤專車8(松山火車站-內科)至松山火車站下車</h4>
+		  <h3>捷運</h3>
+		  <h4>搭捷運板南線至後山埤站，由中坡北路步行約10分鐘，可抵達</h4>
+		  <h3>自行開車</h3>
+		  <h4>由中山高內湖交流道下，循走麥帥公路至圓環下後，順行塔悠路、八德路，便可到達</h4>
+        </div>
+     </div>
+        </div>
+		
+    <div class="card " style="text-align:center;">
+          <div class="card-header" id="headingFour">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+               通化夜市
+              </button>
+            </h2>
+         </div>
+      <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+        <div class="card-body bodybg" style="text-align:left;">
+          <h3>公車</h3>
+		  <h4>搭乘1、207、254、282、284、284(直行)、292、292(區間車)、611、611(區間車)、650至三興國小站下車即可抵達</h4>
+		  <h4>搭乘20、22、22(區間車)、226、292、292(區間車)、33、37、38、信義幹線、292(副)至信義通化街口站下車即可抵達</h4>
+		  <h3>捷運</h3>
+		  <h4>搭捷運木柵線「六張犁站」下車，出口後，往基隆路一段方向步行約15分鐘可抵</h4>
+		  <h3>自行開車</h3>
+		  <h4>直行信義路五段到四段後轉通化街即可抵達</h4>
+		  <h4>直行基隆路二段轉通化街即可抵達</h4>
+        </div>
+     </div>
+        </div>
+		
+	<div class="card" style="text-align:center;">
+          <div class="card-header" id="headingFive">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+               羅東夜市
+              </button>
+            </h2>
+         </div>
+      <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+        <div class="card-body bodybg" style="text-align:left;">
+          <h3>客運</h3>
+		  <h4>(1)搭乘國光客運往羅東方向之班車至羅東站即可抵達</h4>
+		  <h4>(2)由台北市政府搭乘首都之星至羅東站即可抵達</h4>
+		  <h4>(3)由板橋車站、台北車站搭乘葛瑪蘭客運往宜蘭、礁溪或羅東方向之班車至羅東站即可抵達</h4>
+		  <h3>火車</h3>
+		  <h4>搭乘火車至羅東火車站，沿公正路直走至興東路左轉約200公尺即可抵達</h4>
+        </div>
+     </div>
+        </div>
+	
+	<div class="card" style="text-align:center;">
+          <div class="card-header" id="heading1">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+               一中街夜市
+              </button>
+            </h2>
+         </div>
+      <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordionExample">
+        <div class="card-body bodybg" style="text-align:left;">
+          <h3>高鐵</h3>
+		  <h4>搭高鐵至烏日站下，再轉搭其他大眾運輸工具</h4>
+		  <h3>火車</h3>
+		  <h4>自台中火車站下車，再轉搭其他大眾運輸工具</h4>
+		  <h3>客運</h3>
+		  <h4>(1)台中客運：35路、41路、70路、71路、100路、102路，搭乘下列客運於台中技術學院下車</h4>
+		  <h4>(2)仁友客運：1路、20路、21路、25路、31路、61路、105路，搭乘下列客運於台中技術學院下車</h4>
+		  <h4>(3)統聯客運：73路、81路、83路，搭乘下列客運於台中技術學院下車</h4>
+		  <h3>自行開車</h3>
+		  <h4>中山高下：台中市中港路交流道沿中港路→往市區方向直駛→經中正路遇三民路左轉至台中技術學院</h4>
+        </div>
+     </div>
+        </div>
+		
+	<div class="card" style="text-align:center;">
+          <div class="card-header" id="heading2">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+               六合夜市
+              </button>
+            </h2>
+         </div>
+      <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionExample">
+        <div class="card-body bodybg" style="text-align:left;">
+          <h3>高鐵</h3>
+		  <h4>搭高鐵至左營站下，再轉搭其他大眾運輸工具</h4>
+		  <h3>高雄捷運</h3>
+		  <h4>搭乘高雄捷運紅線，於「美麗島站」下車。步行約5分鐘可達</h4>
+		  <h3>自行開車</h3>
+		  <h4>高雄車站→中山路→六合路→六合夜市</h4>
+		  <h4>中山高(國道1號)中正交流道下順中正一路.二路.三路遇中山路左轉接六合路可抵</h4>
+        </div>
+     </div>
+        </div>
+		
+	<div class="card" style="text-align:center;">
+          <div class="card-header" id="heading3">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+               基隆廟口夜市
+              </button>
+            </h2>
+         </div>
+      <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample">
+        <div class="card-body bodybg" style="text-align:left;">
+          <h3>火車</h3>
+		  <h4>於基隆火車站下車後由前站出站，循忠一路直走步行約100公尺即可抵達</h4>
+		  <h3>自行開車</h3>
+		  <h4>行駛國道一號(中山高)由基隆交流道沿著中正高架道路而下，在東一碼頭旁停車場停車，再步行至愛四路即可抵達</h4>
+        </div>
+     </div>
+        </div>
+		
+	<div class="card" style="text-align:center;">
+          <div class="card-header" id="heading4">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+               中原夜市
+              </button>
+            </h2>
+         </div>
+      <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
+        <div class="card-body bodybg" style="text-align:left;">
+          <h3>公車</h3>
+		  <h4>155、156 實踐路站下車即是中原夜市，中原國小站下車往旁邊走即為實踐路的中原夜市</h4>
+		  <h4>155、156 實踐路站下車即是中原夜市，中原國小站下車往旁邊走即為實踐路的中原夜市</h4>
+		  <h3>捷運</h3>
+		  <h4>搭捷運木柵線「六張犁站」下車，出口後，往基隆路一段方向步行約15分鐘可抵</h4>
+		  <h3>自行開車</h3>
+		  <h4>國道1號→內壢交流道(57K)下，再開幾分鐘，即抵達中原夜市</h4>
+		  <h4>國道1號→內壢交流道(62K)下，往中壢方向，再開幾分鐘，即抵達中原夜市</h4>
+		  <h4>實踐路上有停車場可供停車</h4>
+        </div>
+     </div>
+        </div>
+		
+		<div class="card" style="text-align:center;">
+          <div class="card-header" id="heading5">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+               公館夜市
+              </button>
+            </h2>
+         </div>
+      <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample">
+        <div class="card-body bodybg" style="text-align:left;">
+          <h3>公車</h3>
+		  <h4>搭乘0南、1、207、208、208直、208高架、236、251、252、253、254、278、280、280直、284、290、311永福、505、52、530、606、606區、642、642綠、644至捷運公館站</h4>
+		  <h4>搭乘1、207、254、275、275副、275區、284、625、敦化幹線、綠11至公館站</h4>
+		  <h3>捷運</h3>
+		  <h4>搭乘台北捷運綠線至捷運公館站下車即可抵達</h4>
+		  <h3>自行開車</h3>
+		  <h4>國道三號(北二高)：由台北聯絡道下辛亥路端，左轉基隆路至羅斯福路右轉即可抵達</h4>
+		  <h4>國道一號(中山高)：由松江路交流道下，轉建國高架道路南行至和平東路出口，右轉接辛亥路，再左轉接新生南路直行即可抵達</h4>
+        </div>
+     </div>
+        </div>
+		
+		
+</div>
+	</section>
+
+
+
+                        <hr class="my-4" />
+        </div>		
+    </body>
+</html>
